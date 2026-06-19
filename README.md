@@ -3,6 +3,7 @@
 This project is an end-to-end SQL analytics exercise built on a sales dataset containing customers, products, and sales transactions.Also analyzed 3+ years of sales data to identify customer segments, product performance, and growth trends. Converted raw SQL analysis into business insights.
 It moves through the full analytics workflow — from raw data exploration to advanced analytics — and finishes with two production-style reporting views that consolidate customer and product KPIs for easy downstream use (BI tools, dashboards, etc.).
 The goal was to simulate how a Data Analyst would explore, analyze, and report on business data using pure SQL — no external tools required.
+
 🎯 Objective
 Answer real business questions such as:
 How is the business performing over time, and which periods drive the most revenue?
@@ -10,17 +11,20 @@ Which products and categories generate the most (and least) revenue?
 Who are our most valuable customers, and how can we segment them?
 Which customers are at risk of going inactive (recency-based churn signals)?
 How can these metrics be packaged into a reusable report for ongoing use?
+
 🗂️ Project Structure
 File	Purpose
 `Data_exploration.sql`	Initial EDA — database/schema exploration, dimension exploration, date ranges, core business measures, magnitude analysis, and ranking analysis
 `Advanced_Analysis.sql`	Advanced analytics — time-over-time trends, cumulative/moving-average analysis, year-over-year performance, part-to-whole contribution, and customer/product segmentation
 `Customer_Report.sql`	A reusable SQL `VIEW` consolidating customer-level KPIs and segments
 `Product_Report.sql`	A reusable SQL `VIEW` consolidating product-level KPIs and segments
+
 🧱 Database Schema (as used in the project)
 Table	Role	Key Columns
 Products table named as my_table	Product dimension	`product_key`, `product_name`, `category`, `subcategory`, `cost`
 Customers table named as my_table_2	Customer dimension	`customer_key`, `customer_number`, `first_name`, `last_name`, `birthdate`, `country`, `gender`, `create_date`
 Sales table named as my_table_3	Sales fact / transactions	`order_number`, `order_date`, `customer_key`, `product_key`, `sales_amount`, `quantity`, `price`
+
 🔍 What This Project Covers
 1. Data Exploration & EDA (`Data_exploration.sql`)
 Explored database metadata via `information_schema`
@@ -59,6 +63,7 @@ Joins across fact and dimension tables
 Aggregate functions and `GROUP BY` analysis
 Building reusable analytical `VIEW`s for reporting
 Structuring SQL into a logical exploration → analysis → reporting workflow
+
 📬 Connect
 If you have feedback or suggestions on this project, feel free to reach out or open an issue.
 [JINUKUNTLA NIKHIL]
