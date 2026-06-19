@@ -1,5 +1,7 @@
 📊 SQL Data Analytics Project — Customer, Product & Sales Performance Analysis
+
 📌 Overview
+
 This project is an end-to-end SQL analytics exercise built on a sales dataset containing customers, products, and sales transactions.Also analyzed 3+ years of sales data to identify customer segments, product performance, and growth trends. Converted raw SQL analysis into business insights.
 It moves through the full analytics workflow — from raw data exploration to advanced analytics — and finishes with two production-style reporting views that consolidate customer and product KPIs for easy downstream use (BI tools, dashboards, etc.).
 The goal was to simulate how a Data Analyst would explore, analyze, and report on business data using pure SQL — no external tools required.
@@ -23,6 +25,7 @@ How can these metrics be packaged into a reusable report for ongoing use?
 🧱 Database Schema (as used in the project)
 
 Table Key Columns
+
 Products table named as my_table	Product dimension	`product_key`, `product_name`, `category`, `subcategory`, `cost`
 Customers table named as my_table_2	Customer dimension	`customer_key`, `customer_number`, `first_name`, `last_name`, `birthdate`, `country`, `gender`, `create_date`
 Sales table named as my_table_3	Sales fact / transactions	`order_number`, `order_date`, `customer_key`, `product_key`, `sales_amount`, `quantity`, `price`
