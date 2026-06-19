@@ -27,7 +27,9 @@ How can these metrics be packaged into a reusable report for ongoing use?
 Table Key Columns
 
 Products table named as my_table	Product dimension	`product_key`, `product_name`, `category`, `subcategory`, `cost`
+
 Customers table named as my_table_2	Customer dimension	`customer_key`, `customer_number`, `first_name`, `last_name`, `birthdate`, `country`, `gender`, `create_date`
+
 Sales table named as my_table_3	Sales fact / transactions	`order_number`, `order_date`, `customer_key`, `product_key`, `sales_amount`, `quantity`, `price`
 
 🔍 What This Project Covers
@@ -59,6 +61,7 @@ Product attributes: category, subcategory, cost
 Performance segment: High-Performer / Mid-Range / Low-Performer based on total sales
 Activity metrics: total orders, total sales, total quantity, total customers reached
 KPIs: average selling price, average order revenue, and average monthly revenue
+
 🛠️ Skills & SQL Concepts Demonstrated
 Common Table Expressions (CTEs), including multi-step/nested CTEs
 Window functions (`SUM() OVER`, `AVG() OVER`, `LAG()`)
